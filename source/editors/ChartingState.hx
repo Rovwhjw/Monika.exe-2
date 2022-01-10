@@ -58,7 +58,10 @@ class ChartingState extends MusicBeatState
 		'Hey!',
 		'Hurt Note',
 		'GF Sing',
-		'No Animation'
+		'No Animation',
+		'PhantomNote',
+		'Markov',
+		'Cupcake'		
 	];
 	private var noteTypeIntMap:Map<Int, String> = new Map<Int, String>();
 	private var noteTypeMap:Map<String, Null<Int>> = new Map<String, Null<Int>>();
@@ -77,7 +80,12 @@ class ChartingState extends MusicBeatState
 		['Camera Follow Pos', "Value 1: X\nValue 2: Y\n\nThe camera won't change the follow point\nafter using this, for getting it back\nto normal, leave both values blank."],
 		['Alt Idle Animation', "Sets a speciied suffix after the idle animation name.\nYou can use this to trigger 'idle-alt' if you set\nValue 2 to -alt\n\nValue 1: Character to set (Dad, BF or GF)\nValue 2: New suffix (Leave it blank to disable)"],
 		['Screen Shake', "Value 1: Camera shake\nValue 2: HUD shake\n\nEvery value works as the following example: \"1, 0.05\".\nThe first number (1) is the duration.\nThe second number (0.05) is the intensity."],
-		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"]
+		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
+		['Drain', "Steals health everytime its  called, useful for Illusion, Hallucination, Crusify, etc. THE VALUE IS REQUIRED FOR THE EFFECT TO DO SOMETHING Value 1 : How much health, half health is 1."],
+		[Image Flash', "Value 1 is the name of the image/nValue 2 is how long it's there for."],
+		[Flash', "Smoothly sets the Opponent's transparency value. Value 1: Duration/nValue 2: 0 is Black, 1 is White, 2 is Red, 3 is Green,  4 is Blue and 5 is Yellow"],
+		[TweenSpin', "majin sonic spin lol but ported to lua :troll:"],
+		[Zoom', "Zooms the camera in. Value 1: Zoom amount"]
 	];
 
 	var _file:FileReference;
